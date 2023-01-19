@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="portfolio développeuse web">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Portfolio</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <button class="mobile-nav__toggle mobile-nav__toggle--closed" aria-controls="navigation">
-                <span class="sr-only">Menu</span>
-                <img src="../images/icons/burger-icon-dark.svg" alt="menu icon" class="menu__icon menu__icon--closed">
-                <img src="../images/icons/close-burger-icon-dark.svg" alt="menu icon" class="menu__icon menu__icon--openned">
+            <button class="mobile-nav__toggle mobile-nav__toggle--closed" aria-controls="navigation" aria-expanded="false">
+                <span class="visually-hidden">Menu</span>
+                <img src="../images/icons/burger-icon-dark.svg" alt="menu icon open" class="menu__icon menu__icon--open">
+                <img src="../images/icons/close-burger-icon-dark.svg" alt="menu icon close" class="menu__icon menu__icon--close visually-hidden">
             </button>
-            <nav class="nav">
-                <ul class="nav-list" id="navigation">
+            <nav class="nav" >
+                <ul class="nav-list visually-hidden" id="navigation">
                     <li><a href="#" class="nav__link">Accueil</a></li>
                     <li><a href="#" class="nav__link">A propos</a></li>
                     <li><a href="#" class="nav__link">Projets</a></li>
@@ -24,27 +26,38 @@
                 </ul>
             </nav>
         </div>
-        
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="container">
                 <span class="hero__prefix">Bonjour! Je suis Manon Bernard</span>
                 <h1 class="hero__title">Développeuse Web</h1>
                 <h2 class="hero__title--secondary">Fullstack Javascript</h2>
                 <p class="hero__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis culpa beatae corrupti laborum cupiditate quis nesciunt nobis recusandae! Eligendi eum distinctio cupiditate. Optio autem, eveniet dicta rem necessitatibus veniam ipsa. Libero, reprehenderit! Eligendi nisi accusantium quos modi corrupti consectetur quae esse, quas facilis beatae nesciunt sapiente fuga fugiat fugit cupiditate?</p>
                 <div class="cta">
-                    <a href="" class="cta__link cta__link--accent"></a>
-                    <a href="" class="cta__link cta__link--white"></a>
+                    <a href="#work" class="cta__link cta__link--accent">Mon travail</a>
+                    <a href="#contact" class="cta__link cta__link--white">Me contacter</a>
                 </div>
                 <ul aria-label="social links" class="socials-links">
-                    <li><a href="" class="social-link" aria-label="twitter"><img src="" alt="twitter icon" class="social-icon social-icon--twitter"></a></li>
-                    <li><a href="" class="social-link" aria-label="linkedin"><img src="" alt="linkedin icon" class="social-icon social-icon--linkedin"></a></li>
-                    <li><a href="" class="social-link" aria-label="github"><img src="" alt="github icon" class="social-icon social-icon--github"></a></li>
+                    <li>
+                        <a href="/https://twitter.com/codecouleur_mb" class="social-link" aria-label="twitter">
+                            <img src="../images/icons/twitter-icon.svg" alt="twitter icon" class="social-icon social-icon--twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/manon-bernard-mb/" class="social-link" aria-label="linkedin">
+                            <img src="../images/icons/linkedin-icon.svg" alt="linkedin icon" class="social-icon social-icon--linkedin">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/manon-bernard" class="social-link" aria-label="github">
+                            <img src="../images/icons/github-icon.svg" alt="github icon" class="social-icon social-icon--github">
+                        </a>
+                    </li>
                 </ul>
             </div> 
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="background-color">
                 <div class="container">
                     <h3 class="section__title">A propos de moi</h3>
@@ -52,7 +65,7 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="container">
                 <h3 class="section__title section__title--white">Mes Projets</h3>
                 <article class="project__card">
@@ -96,7 +109,7 @@
                 </article>
             </div>
         </section>
-        <section class="work">
+        <section class="work" id="work">
             <div class="container">
                 <h3 class="section__title section__title--white">Mon Parcours</h3>
                 <p class="section__text section__text--white">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, minima accusamus! Impedit reiciendis recusandae placeat ipsa ab. Obcaecati sint iusto, aliquid quia ad suscipit sunt veritatis excepturi eveniet debitis autem, adipisci voluptate magni facilis. Mollitia dignissimos similique eveniet omnis, sapiente quisquam praesentium optio sint enim aut voluptatum voluptatem quae debitis.</p>
@@ -108,21 +121,34 @@
             <div class="container">
                 <form action="" method="post">
                     <h3 class="form__title">Contact</h3>
+                    <label for="email"></label>
                     <input type="email" name="email" id="email" placeholder="example@domain.com">
+                    <label for="message"></label>
                     <textarea name="message" id="message" cols="30" rows="10">Votre message ici...</textarea>
                     <input type="submit" value="Envoyer">
                 </form>
                 <ul aria-label="social links" class="socials-links">
-                    <li><a href="" class="social-link" aria-label="twitter"><img src="" alt="twitter icon" class="social-icon social-icon--twitter"></a></li>
-                    <li><a href="" class="social-link" aria-label="linkedin"><img src="" alt="linkedin icon" class="social-icon social-icon--linkedin"></a></li>
-                    <li><a href="" class="social-link" aria-label="github"><img src="" alt="github icon" class="social-icon social-icon--github"></a></li>
+                    <li>
+                        <a href="/https://twitter.com/codecouleur_mb" class="social-link" aria-label="twitter">
+                            <img src="../images/icons/twitter-icon.svg" alt="twitter icon" class="social-icon social-icon--twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/manon-bernard-mb/" class="social-link" aria-label="linkedin">
+                            <img src="../images/icons/linkedin-icon.svg" alt="linkedin icon" class="social-icon social-icon--linkedin">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/manon-bernard" class="social-link" aria-label="github">
+                            <img src="../images/icons/github-icon.svg" alt="github icon" class="social-icon social-icon--github">
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
-
     </main>
-        
-    
-    <footer></footer>  
+    <footer></footer>
+    <script src="../js/index.js"></script>
 </body>
 </html>
+
