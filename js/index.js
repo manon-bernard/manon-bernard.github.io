@@ -3,7 +3,6 @@ const nav = document.querySelector('.nav-list');
 const mobileMenuOpen = document.querySelector('.menu__icon--open');
 const mobileMenuClose = document.querySelector('.menu__icon--close');
 
-
 mobileMenuToggle.addEventListener('click', handleMenuToggle);
 
 function handleMenuToggle(event){
