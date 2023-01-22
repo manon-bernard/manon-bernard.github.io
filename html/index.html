@@ -39,7 +39,7 @@
             </nav>
         </section>
         <section class="hero" id="hero">
-            <div class="hero-container">
+
                 <p class="hero__prefix">Bonjour!</p>
                 <p class="hero__prefix">Je suis Manon Bernard</p>
                 <h1 class="hero__title">Développeuse Web</h1>
@@ -51,10 +51,10 @@
                     accusantium quos modi corrupti consectetur quae esse, quas facilis beatae nesciunt sapiente fuga
                     fugiat fugit cupiditate?</p>
                 <div class="cta">
-                    <a href="#work" class="cta__link cta__link--accent">Mon travail</a>
-                    <a href="#contact" class="cta__link cta__link--white">Me contacter</a>
+                    <a href="#work" class="button button--accent">Mon travail</a>
+                    <a href="#contact" class="button button--white">Me contacter</a>
                 </div>
-            </div>
+
         </section>
         <section class="social-icons">
             <ul aria-label="social links" class="socials-links">
@@ -99,8 +99,21 @@
             <div class="container">
                 <h3 class="section__title">Mes Projets</h3>
                 <article class="project__card">
+                    <img src="../images/background/background-vertical.png" alt="" class="card__img">
                     <h4 class="card__title">Projet #1</h4>
-                    <img src="" alt="" class="card__img">
+                    <span class="card__subtitles">Languages:</span>
+                    <p class="project__tag">HTML, CSS, Javascript</p>
+                    <span class="card__subtitles">Frameworks:</span>
+                    <p class="project__tag">REACT</p>
+                    <span class="card__subtitles">Objectif du projet:</span>
+                    <p class="project__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, dolor!</p>
+                    <span class="card__subtitles">Liens:</span>
+                    <a href="#" class="card__link button--white">GITHUB</a>
+                    <a href="#" class="card__link">SITE</a>
+                </article>
+                <article class="project__card">
+                    <img src="../images/background/background-vertical.png" alt="" class="card__img">
+                    <h4 class="card__title">Projet #1</h4>
                     <span class="card__subtitles">Languages:</span>
                     <p class="project__tag">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, dolor!</p>
                     <span class="card__subtitles">Frameworks:</span>
@@ -112,21 +125,8 @@
                     <a href="#" class="card__link">SITE</a>
                 </article>
                 <article class="project__card">
+                    <img src="../images/background/background-vertical.png" alt="" class="card__img">
                     <h4 class="card__title">Projet #1</h4>
-                    <img src="" alt="" class="card__img">
-                    <span class="card__subtitles">Languages:</span>
-                    <p class="project__tag">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, dolor!</p>
-                    <span class="card__subtitles">Frameworks:</span>
-                    <p class="project__tag">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, dolor!</p>
-                    <span class="card__subtitles">Objectif du projet:</span>
-                    <p class="project__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, dolor!</p>
-                    <span class="card__subtitles">Liens:</span>
-                    <a href="#" class="card__link">GITHUB</a>
-                    <a href="#" class="card__link">SITE</a>
-                </article>
-                <article class="project__card">
-                    <h4 class="card__title">Projet #1</h4>
-                    <img src="" alt="" class="card__img">
                     <span class="card__subtitles">Languages:</span>
                     <p class="project__tag">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, dolor!</p>
                     <span class="card__subtitles">Frameworks:</span>
@@ -162,19 +162,19 @@
             </div>
             
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <form action="" method="post">
                     <h3 class="form__title">Contact</h3>
                     <label for="email"></label>
-                    <input type="email" name="email" id="email" placeholder="example@domain.com">
+                    <input type="email" name="email" id="email" placeholder="votre-email@domain.com">
                     <label for="message"></label>
-                    <textarea name="message" id="message" cols="30" rows="10">Votre message ici...</textarea>
-                    <input type="submit" value="Envoyer">
+                    <textarea name="message" id="message" rows="10">Votre message ici...</textarea>
+                    <input type="submit" value="Envoyer" class="button button--white">
                 </form>
                 <ul aria-label="social links" class="socials-links">
                     <li>
-                        <a href="/https://twitter.com/codecouleur_mb" class="social-link" aria-label="twitter">
+                        <a href="https://twitter.com/codecouleur_mb" class="social-link" aria-label="twitter">
                             <img src="../images/icons/twitter-icon.svg" alt="twitter icon"
                                 class="social-icon social-icon--twitter">
                         </a>
