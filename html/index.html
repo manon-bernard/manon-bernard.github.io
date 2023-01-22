@@ -6,10 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="portfolio développeuse web">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -19,7 +23,7 @@
 
 <body>
     <header>
-        <section class="menu" id="menu">
+        <div class="menu" id="menu">
             <button class="mobile-nav__toggle mobile-nav__toggle--closed" aria-controls="navigation"
                 aria-expanded="false">
                 <span class="visually-hidden">Menu</span>
@@ -28,35 +32,42 @@
                 <img src="../images/icons/close-burger-icon-dark.svg" alt="menu icon close"
                     class="menu__icon menu__icon--close visually-hidden">
             </button>
-            <nav class="nav">
-                <ul class="nav-list visually-hidden" id="navigation">
-                    <li><a href="#" class="nav__link">Accueil</a></li>
-                    <li><a href="#" class="nav__link">A propos</a></li>
-                    <li><a href="#" class="nav__link">Projets</a></li>
-                    <li><a href="#" class="nav__link">Parcours</a></li>
-                    <li><a href="#" class="nav__link">Contact</a></li>
+            <nav class="nav visually-hidden" id="navigation">
+                <ul class="nav-list ">
+                    <a href="#about" class="nav__link">
+                        <li class="nav-items">A propos</li>
+                    </a>
+                    <a href="#projects" class="nav__link">
+                        <li class="nav-items">Projets</li>
+                    </a>
+                    <a href="#work" class="nav__link">
+                        <li class="nav-items">Parcours</li>
+                    </a>
+                    <a href="#contact" class="nav__link">
+                        <li class="nav-items">Contact</li>
+                    </a>
                 </ul>
             </nav>
-        </section>
-        <section class="hero" id="hero">
+        </div>
+        <div class="hero" id="hero">
 
-                <p class="hero__prefix">Bonjour!</p>
-                <p class="hero__prefix">Je suis Manon Bernard</p>
-                <h1 class="hero__title">Développeuse Web</h1>
-                <h2 class="hero__title--secondary">Fullstack Javascript</h2>
-                <p class="hero__text visually-hidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
-                    culpa beatae
-                    corrupti laborum cupiditate quis nesciunt nobis recusandae! Eligendi eum distinctio cupiditate.
-                    Optio autem, eveniet dicta rem necessitatibus veniam ipsa. Libero, reprehenderit! Eligendi nisi
-                    accusantium quos modi corrupti consectetur quae esse, quas facilis beatae nesciunt sapiente fuga
-                    fugiat fugit cupiditate?</p>
-                <div class="cta">
-                    <a href="#work" class="button button--accent">Mon travail</a>
-                    <a href="#contact" class="button button--white">Me contacter</a>
-                </div>
+            <p class="hero__prefix">Bonjour!</p>
+            <p class="hero__prefix">Je suis Manon Bernard</p>
+            <h1 class="hero__title">Développeuse Web</h1>
+            <h2 class="hero__title--secondary">Fullstack Javascript</h2>
+            <p class="hero__text visually-hidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
+                culpa beatae
+                corrupti laborum cupiditate quis nesciunt nobis recusandae! Eligendi eum distinctio cupiditate.
+                Optio autem, eveniet dicta rem necessitatibus veniam ipsa. Libero, reprehenderit! Eligendi nisi
+                accusantium quos modi corrupti consectetur quae esse, quas facilis beatae nesciunt sapiente fuga
+                fugiat fugit cupiditate?</p>
+            <div class="cta">
+                <a href="#work" class="button button--accent">Mon travail</a>
+                <a href="#contact" class="button button--white">Me contacter</a>
+            </div>
 
-        </section>
-        <section class="social-icons">
+        </div>
+        <div class="social-icons">
             <ul aria-label="social links" class="socials-links">
                 <li>
                     <a href="/https://twitter.com/codecouleur_mb" class="social-link" aria-label="twitter">
@@ -77,23 +88,23 @@
                     </a>
                 </li>
             </ul>
-        </section>
+        </div>
 
     </header>
 
     <main>
         <section class="about" id="about">
             <div class="container">
-                
-                    <h3 class="section__title">A propos de moi</h3>
-                    <p class="section__text section__text--dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        At, minima accusamus! Impedit reiciendis recusandae placeat ipsa ab. Obcaecati sint iusto, aliquid
-                        quia ad suscipit sunt veritatis excepturi eveniet debitis autem, adipisci voluptate magni facilis.
-                        Mollitia dignissimos similique eveniet omnis, sapiente quisquam praesentium optio sint enim aut
-                        voluptatum voluptatem quae debitis.</p>
-                
+
+                <h3 class="section__title">A propos de moi</h3>
+                <p class="section__text section__text--dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    At, minima accusamus! Impedit reiciendis recusandae placeat ipsa ab. Obcaecati sint iusto, aliquid
+                    quia ad suscipit sunt veritatis excepturi eveniet debitis autem, adipisci voluptate magni facilis.
+                    Mollitia dignissimos similique eveniet omnis, sapiente quisquam praesentium optio sint enim aut
+                    voluptatum voluptatem quae debitis.</p>
+
             </div>
-            
+
         </section>
         <section class="projects" id="projects">
             <div class="container">
@@ -108,16 +119,16 @@
                     <span class="card__subtitles">Objectif du projet:</span>
                     <p class="project__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, dolor!</p>
                     <span class="card__subtitles">Liens:</span>
-                    <a href="#" class="card__link button--white">GITHUB</a>
+                    <a href="#" class="card__link">GITHUB</a>
                     <a href="#" class="card__link">SITE</a>
                 </article>
                 <article class="project__card">
                     <img src="../images/background/background-vertical.png" alt="" class="card__img">
-                    <h4 class="card__title">Projet #1</h4>
+                    <h4 class="card__title">Projet #2</h4>
                     <span class="card__subtitles">Languages:</span>
-                    <p class="project__tag">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, dolor!</p>
+                    <p class="project__tag">HTML, CSS, Javascript</p>
                     <span class="card__subtitles">Frameworks:</span>
-                    <p class="project__tag">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, dolor!</p>
+                    <p class="project__tag">REACT</p>
                     <span class="card__subtitles">Objectif du projet:</span>
                     <p class="project__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, dolor!</p>
                     <span class="card__subtitles">Liens:</span>
@@ -126,11 +137,11 @@
                 </article>
                 <article class="project__card">
                     <img src="../images/background/background-vertical.png" alt="" class="card__img">
-                    <h4 class="card__title">Projet #1</h4>
+                    <h4 class="card__title">Projet #3</h4>
                     <span class="card__subtitles">Languages:</span>
-                    <p class="project__tag">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, dolor!</p>
+                    <p class="project__tag">HTML, CSS, Javascript</p>
                     <span class="card__subtitles">Frameworks:</span>
-                    <p class="project__tag">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, dolor!</p>
+                    <p class="project__tag">REACT</p>
                     <span class="card__subtitles">Objectif du projet:</span>
                     <p class="project__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, dolor!</p>
                     <span class="card__subtitles">Liens:</span>
@@ -143,24 +154,30 @@
         <section class="work" id="work">
             <div class="container">
                 <h3 class="section__title section__title--white">Mon Parcours</h3>
-            <p class="section__text section__text--white">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-                minima accusamus! Impedit reiciendis recusandae placeat ipsa ab. Obcaecati sint iusto, aliquid quia ad
-                suscipit sunt veritatis excepturi eveniet debitis autem, adipisci voluptate magni facilis. Mollitia
-                dignissimos similique eveniet omnis, sapiente quisquam praesentium optio sint enim aut voluptatum
-                voluptatem quae debitis.</p>
-            <p class="section__text section__text--white">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-                minima accusamus! Impedit reiciendis recusandae placeat ipsa ab. Obcaecati sint iusto, aliquid quia ad
-                suscipit sunt veritatis excepturi eveniet debitis autem, adipisci voluptate magni facilis. Mollitia
-                dignissimos similique eveniet omnis, sapiente quisquam praesentium optio sint enim aut voluptatum
-                voluptatem quae debitis.</p>
-            <p class="section__text section__text--white">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-                minima accusamus! Impedit reiciendis recusandae placeat ipsa ab. Obcaecati sint iusto, aliquid quia ad
-                suscipit sunt veritatis excepturi eveniet debitis autem, adipisci voluptate magni facilis. Mollitia
-                dignissimos similique eveniet omnis, sapiente quisquam praesentium optio sint enim aut voluptatum
-                voluptatem quae debitis.</p>
+                <p class="section__text section__text--white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    At,
+                    minima accusamus! Impedit reiciendis recusandae placeat ipsa ab. Obcaecati sint iusto, aliquid quia
+                    ad
+                    suscipit sunt veritatis excepturi eveniet debitis autem, adipisci voluptate magni facilis. Mollitia
+                    dignissimos similique eveniet omnis, sapiente quisquam praesentium optio sint enim aut voluptatum
+                    voluptatem quae debitis.</p>
+                <p class="section__text section__text--white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    At,
+                    minima accusamus! Impedit reiciendis recusandae placeat ipsa ab. Obcaecati sint iusto, aliquid quia
+                    ad
+                    suscipit sunt veritatis excepturi eveniet debitis autem, adipisci voluptate magni facilis. Mollitia
+                    dignissimos similique eveniet omnis, sapiente quisquam praesentium optio sint enim aut voluptatum
+                    voluptatem quae debitis.</p>
+                <p class="section__text section__text--white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    At,
+                    minima accusamus! Impedit reiciendis recusandae placeat ipsa ab. Obcaecati sint iusto, aliquid quia
+                    ad
+                    suscipit sunt veritatis excepturi eveniet debitis autem, adipisci voluptate magni facilis. Mollitia
+                    dignissimos similique eveniet omnis, sapiente quisquam praesentium optio sint enim aut voluptatum
+                    voluptatem quae debitis.</p>
 
             </div>
-            
+
         </section>
         <section class="contact" id="contact">
             <div class="container">
@@ -170,7 +187,7 @@
                     <input type="email" name="email" id="email" placeholder="votre-email@domain.com">
                     <label for="message"></label>
                     <textarea name="message" id="message" rows="10">Votre message ici...</textarea>
-                    <input type="submit" value="Envoyer" class="button button--white">
+                    <input type="submit" value="Envoyer" class="button--submit button button--white">
                 </form>
                 <ul aria-label="social links" class="socials-links">
                     <li>
@@ -180,7 +197,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/manon-bernard-mb/" class="social-link" aria-label="linkedin">
+                        <a href="https://www.linkedin.com/in/manon-bernard-mb/" class="social-link"
+                            aria-label="linkedin">
                             <img src="../images/icons/linkedin-icon.svg" alt="linkedin icon"
                                 class="social-icon social-icon--linkedin">
                         </a>
@@ -194,7 +212,7 @@
                 </ul>
 
             </div>
-            
+
         </section>
     </main>
     <footer></footer>
