@@ -29,7 +29,7 @@ section {
 }
 
 .section__title {
-    font-weight: 1.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
     padding-bottom: 0.5rem;
 }
@@ -119,6 +119,7 @@ header {
 }
 
 .nav__link {
+    color: inherit;
     max-height:10vh;
     padding: 1em 1em;
     background-color: var(--white);
@@ -129,9 +130,6 @@ header {
     font-weight: bold;
 }
 
-.nav__link {
-    color: inherit;
-}
 
 /* -----Social Icons----- */
 
@@ -145,6 +143,11 @@ header {
     background-color: var(--accent);
     height:30px;
     width:30px;
+}
+
+.socials-links {
+    display:flex;
+    gap:1rem;
 }
 
 .social-icon:hover,
@@ -192,6 +195,7 @@ header {
 /* -----About----- */
 
 .about {
+    height:50vh;
     display: grid;
     grid-template-rows: 1fr 3fr 1fr;
     background-image:url('/images/background/background-vertical-25.png');
@@ -301,12 +305,188 @@ textarea {
 
 input[type="submit"] {
     position: absolute;
-    bottom:0.5rem;
-    right:0.5rem;
+    padding: 0.5em 1em;
+    bottom:1rem;
+    right:1rem;
 }
 
 .button--submit:hover,
 .button--submit:focus {
     color: var(--medium);
     background-color: var(--accent);
+}
+
+@media (min-width : 700px){
+
+    section {
+        min-height:auto;
+    }
+
+
+    header {
+        background:url('/images/background/background.png');
+        background-size: cover;
+        background-position: center;
+    
+    }
+
+    .nav {
+        display: block;
+        position: static;
+    }
+
+    .nav-list {
+        background-color: transparent;
+        width: auto;
+        display:flex;
+        padding:1vw;
+        gap:5vw;
+    }
+
+    .nav__link {
+        color:var(--white);
+        max-height:auto;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .nav__link:hover {
+        background-color: transparent;
+        color: var(--accent);
+    }
+
+    .hero {
+        margin:auto;
+        width:60vw;
+    }
+
+    .hero__title {
+        font-size: 2.5rem;
+        margin-block:2rem;
+    }
+    
+    .hero__title--secondary {
+        font-size: 1.75rem;
+        margin-bottom:1.75rem;
+    }
+
+    .hero__prefix {
+        font-size:1.25rem;
+        margin-block:0.5rem;
+    }
+
+
+    .hero .button {
+        font-size: 1.25rem;
+        padding: 0.5em 0.5em;
+        margin-right: 0.5rem;
+    }
+
+    .mobile-nav__toggle {
+        display:none;
+    }
+
+    .social-icon {
+        padding:0.125rem;
+        background-color: var(--accent);
+        height:50px;
+        width:50px;
+    }
+
+    .about {
+        height:70vh;
+        display: flex;
+        background-image:url('/images/background/background-25.png');
+        background-size: cover;
+    }
+    
+    .about > .container {
+        margin:auto;
+        width:50vw;
+    }
+
+    .article-container {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:1rem;
+    }
+
+    .projects {
+        height:100vh;
+    }
+
+    article {
+        max-width: 30vw;
+    }
+
+    article:not(:first-of-type) {
+        margin-top:0;
+    }
+
+    .card__img {
+        width:100%;
+    }
+
+    .card__title {
+        font-size: 1.5rem;
+    }
+
+    .work {
+        background-image:url('/images/background/background-25.png');
+    }
+
+    .work .container {
+        max-width:60vw;
+        margin:auto;
+        padding:10vh;
+    }
+
+    .contact {
+        background:none;
+    }
+    .background-container {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        background:url('/images/background/background-vertical.png');
+        background-size: cover;
+
+    }
+    .contact .container {
+        padding:0;
+        height:100vh;
+        display:grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr;    
+    }
+
+    .contact form {
+        max-width:40vw;
+        margin-left:auto;
+    }
+
+    .form-section {
+        background-color: var(--white);
+        grid-column-start: 2;
+    }
+
+    .contact  .socials-links {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        align-self:end;
+        justify-self: end;
+        display:block;
+        margin:5vh 5vw;
+    }
+    .contact  .social-link {
+        display:block;
+        margin:2vh;
+    }
+
+    input[type="submit"] {
+        padding: 0.5em 1em;
+    }
+    
+
+
+
 }
